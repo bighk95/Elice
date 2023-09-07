@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form>
+        <label for="">이름</label>
+        <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            placeholder="홍길동"  
+        />
+
+        <br /><br />
+
+        <label for="">비밀번호</label>
+        <input 
+            type="text" 
+            id="password" 
+            name="password" 
+            placeholder="대소문자를 구분해주세요."  
+        />
+
+        <br /><br />
+
+        <label for="email">이메일</label>
+        <input 
+            type="text" 
+            id="email" 
+            name="email" 
+            placeholder="gildong@gmail.com" 
+        />
+
+        <p>성별을 입력해주세요.</p>
+
+        <input 
+            type="radio" 
+            name="gender" 
+            value="male" 
+            id="option-1"
+        />
+        <label for="option-1">남자</label>
+
+        <input 
+            type="radio" 
+            name="gender" 
+            value="female" 
+            id="option-2"
+        />
+        <label for="option-2">여자</label>
+        <!-- 같은 맥락에 대한 한가지만의 선택을 하게 하기 위해서는 name을 한가지로 통일하여 변수를 통일시켜야함. -->
+
+        <br /><br />
+
+        <div>
+            <label for="age">나이</label>
+            <select name="age" id="age">
+                <option value="age1">18 - 29</option>
+                <option value="age2">30 - 49</option>
+                <option value="age3">50 - 69</option>
+            </select>
+        </div>
+
+        <br /><br />
+
+        <div>
+            <label for="introduce">자기소개</label>
+            <textarea 
+                name="introduce" 
+                id="introduce" 
+                cols="30" 
+                rows="10">
+            </textarea>
+        </div>
+    </form>
+</body>
+</html>

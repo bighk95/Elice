@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid & Flex</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            margin-top: 10px;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        /* contents 공간의 영역을 침범할 수 있는 contents area 안의 공간 -> padding */
+        /* contents 공간의 영역을 침범할 수 없는 contents area 밖의 공간 -> margin */
+
+
+        .flex-item {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flex-item2 {
+            flex: 3;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">영역1</div>
+        <div class="grid-item">영역2</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">영역1</div>
+        <div class="flex-item2">영역2</div>
+    </div>
+</body>
+
+</html>

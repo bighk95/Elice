@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 브라우저에서 읽는 기본정보를 세팅해주는 영역 -->
+
+    <meta charset="UTF-8">
+    <!-- 글자 인코당 -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 브라우저 화면에서 그려지는 형태를 결정하는 영역, 반응형 웹 프로그래밍 -->
+
+    <title>Document</title>
+
+    <!-- CSS 적용방법 2가지 -->
+    <!-- 1. 직접적으로 inline에 스타일을 적용하는 방법 -->
+    <!-- 2. head 또는 외부 파일로부터 스타일을 불러와 적용하는 방법 -->
+
+    <link rel="stylesheet" href="./style/index.css">
+    <!-- css가 적용되는 순서는 inline -> html 내부의 style태그 -> link로 가져오는 css -->
+</head>
+
+<body>
+    <div class="headerText">
+        <h1>Hi, Elice</h1>
+        <h2>Hi, Elice</h2>
+        <h3>Hi, Elice</h3>
+    </div>
+
+    <div class="paragraphText">
+        <p class="firstP" id="first">웹 프로그래밍 입문</p>
+        <!-- style을 적용할때는 보통 class로, javascript를 적용할때는 보통 id로 적용함. -->
+        <!-- class로 style을 호출할 때에는 .{ } // id로 style을 호출할때는 #{ } -->
+        <p style="color: black;">
+            안녕하세요. 6기 레이서 박현규입니다. <br /> 열심히 배우겠습니다.
+        </p>
+        <!-- css가 가장 먼저 적용되는것은 inline css, 다음으로는 같은 내용에 대한 css일 때에 나중에 적용되는 css -->
+
+        <!-- inline tag -->
+        <p class="secondP">네이버로 연결하기 <a href="https://www.naver.com">네이버로 이동</a></p>
+        <p class="thirdP">에러난 네이버로 연결하기 <a href="www.naver.com">네이버로 이동</a></p>
+
+        <!-- 기본 live server   http://127.0.0.1:5500/index.html-->
+        <!-- 에러난 네이버        http://127.0.0.1:5500/www.naver.com-->
+    </div>
+
+    <div class="imageBox">
+        <img src="./img/ryan_coding.gif" alt="이미지에 대한 설명" style="width: 150px;">
+        <!-- src는 경로를 지정하는것 -->
+    </div>
+
+    <!-- li*원하는 리스트의 갯수 -->
+    <ul>
+        <li>일</li>
+        <li>이</li>
+        <li>삼</li>
+    </ul>
+
+    <ol>
+        <li>일</li>
+        <li>이</li>
+        <li>삼</li>
+    </ol>
+</body>
+
+</html>
